@@ -1,0 +1,13 @@
+﻿<Window x:Class="CreatureReactor.NameEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit Name" Height="112" Width="198" ShowInTaskbar="False" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterOwner"
+        FocusManager.FocusedElement="{Binding ElementName=TxtBox_Name}">
+    <Grid>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxtBox_Name" HorizontalAlignment="Left" Height="23" Margin="54,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126"/>
+        <Button x:Name="Btn_NameSubmit" Content="OK" HorizontalAlignment="Left" Margin="20,53,0,0" VerticalAlignment="Top" Width="75" Click="confirmName" IsDefault="True"/>
+        <Button x:Name="Btn_NameCancel" Content="Cancel" HorizontalAlignment="Left" Margin="100,53,0,0" VerticalAlignment="Top" Width="75" Click="Btn_NameCancel_Click" IsCancel="True"/>
+
+    </Grid>
+</Window>
